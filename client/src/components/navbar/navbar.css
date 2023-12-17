@@ -1,0 +1,124 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  padding: 10px 0;
+}
+.navbar__section_bg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+
+.navbar__section_bg_logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__section_bg_logo img {
+  width: 60px;
+  cursor: pointer;
+}
+
+.navbar__section_bg_logo h3 {
+  margin-left: 10px;
+}
+
+.navbar__section_bg_pages ul {
+  list-style: none;
+}
+
+.navbar__section_bg_pages ul li a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar__section_bg_pages ul li a:hover, a:hover {
+  color: royalblue;
+  cursor: pointer;
+}
+
+.navbar__section_sm {
+  display: none;
+}
+
+@media screen and (min-width: 1101px) {
+  .navbar__section_sm__pages {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar {
+    position: static;
+  }
+  .navbar__section_bg {
+    display: none;
+  }
+
+  .navbar__section_sm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+  }
+
+  .navbar__section_sm__logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar__section_sm__logo h4 {
+    padding-left: 10px;
+  }
+
+  .navbar__section_sm_icon {
+    cursor: pointer;
+  }
+
+  .navbar__section_sm__pages_list {
+    display: flex;
+    align-items: start;
+    margin: 20px 10px;
+    height: 70vh;
+    width: 100vw;
+    justify-content: start;
+  }
+
+  .navbar__section_sm__pages_list ul {
+    list-style: none;
+  }
+  .navbar__section_sm__pages_list ul li {
+    margin: 30px 10px;
+  }
+
+  .navbar__section_sm__pages_list ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .navbar__section_sm__pages_list ul li a:hover {
+    color: royalblue;
+  }
+
+  .navbar__border_bottom {
+    border-bottom: 1px solid lightgray;
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar__section_sm {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar__section_sm_icon {
+    margin-left: 30px;
+  }
+}
